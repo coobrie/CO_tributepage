@@ -1,6 +1,11 @@
 nav{
-  background-color: #2ea3d0;
+  background-color: #fff;
+  opacity: .75;
   width: 100%;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 body{
   margin:0;
@@ -12,7 +17,7 @@ body{
 }
 nav ul {
   list-style: none;
-  color: #d7e8f0;
+  color: black;
   font-weight: bold;
   display:flex;
   justify-content: space-between;
@@ -22,15 +27,35 @@ nav ul {
   padding: 20px;
 }
 .header-img{
+  margin-bottom: 15px;
   grid-area: head;
   text-align: center;
   font-size: 55px;
   font-weight: bold;
-  background-color: #d3d3d3;
-  color: #fff;
+  background-color: #eddea4 ;
+  /*color: #fff*/
   padding-bottom: 25px;
 }
+.highlight-text{
+  background-color: #fff;
+  opacity: .75;
+  border-radius: 25px;
+  padding-left: 20px;
+}
+.column-text{
+  background-color: #fff;
+  opacity: .75;
+  border-radius: 25px;
+  display: block;
+}
+h1, p, h3{
+  padding-left:20px;
+  padding-right:20px;
+}
+p{
 
+  padding-bottom: 10px;
+}
 h1{
   padding-top: 10px;
   font-size: 24px;
@@ -38,18 +63,41 @@ h1{
 h2{
   font-size: 24px;
 }
+
+h4{
+  float: right;
+}
+fa-ul{
+  padding-right: 20px;
+}
 .pad{
   padding-right: 10px;
+  background-color: transparent;
 }
+
 .sidebar{
+  margin-top:20px;
+  margin-left: 15px;
   grid-area: side;
   text-align: center;
+  background-color: white;
+  border-radius: 25px;
+  opacity: .75;
 
+}
+
+.footer{
+  text-align: center;
+  background-color: #fff;
+  opacity: .75;
+  padding-top: 10px;
 }
 
 .sidepic{
   border-radius: 25px;
   margin-top:25px;
+  margin-bottom: 25px;
+
 
 }
 
@@ -63,12 +111,20 @@ h2{
 .feat2{
   grid-area: f2;
 }
-
+.feat3{
+  grid-area: f3;
+}
 .feat4{
   grid-area: f4;
   display: flex;
   justify-content: center;
 
+}
+.feat5{
+  grid-area: f5;
+  display: flex;
+  justify-content: space-between;
+  padding-right: 70px;
 }
 .wrapper {
     display: grid;
@@ -79,5 +135,6 @@ h2{
       "side f1 f1 f1"
       "side f2 f2 f2"
       "side f3 f3 f3"
-      "f4 f4 f4 f4";
+      "f4 f4 f4 f4"
+      "f5 f5 f5 f5";
 }
